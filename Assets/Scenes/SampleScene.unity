@@ -296,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 1532258486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 0.09, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5846, y: 0.5846, z: 0.5846}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,6 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PipePrefab: {fileID: 1005072188083650944, guid: 850f3cb07cd983d4b9be1bbf45df1f33, type: 3}
   SpawnRate: 2
+  Highest: 5
 --- !u!4 &1991696904
 Transform:
   m_ObjectHideFlags: 0
@@ -418,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 1991696902}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.78, y: -3.2, z: -0.16176823}
+  m_LocalPosition: {x: 17.86, y: -3.2, z: -0.16176823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
