@@ -1266,7 +1266,7 @@ MonoBehaviour:
   FlapStrength: 6
   IsAlive: 1
   SmoothRotation: 0.01
-  AngleRotation: 75
+  AngleRotation: 60
   WingUp: {fileID: 1449607959}
   WingDown: {fileID: 892791292}
 --- !u!1 &1991696902
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PipePrefab: {fileID: 1005072188083650944, guid: 850f3cb07cd983d4b9be1bbf45df1f33, type: 3}
-  SpawnRate: 1
+  SpawnRate: 1.2
   Highest: 3
   BonusPipeRate: 3
 --- !u!4 &1991696904

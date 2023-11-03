@@ -32,9 +32,6 @@ public class CloudSpawerScript : MonoBehaviour
 
     private void Spawn()
     {
-        var positionY = Random.Range(-4, 8);
-        var newCloud =Instantiate(CloudPrefab, new Vector3(transform.position.x, positionY, 10), transform.rotation);
-        var scale = Random.Range(0.1f, 0.5f);
-        newCloud.transform.localScale = new Vector3(scale, scale);
+        Instantiate(CloudPrefab, transform.position, transform.rotation);
     }
 }
