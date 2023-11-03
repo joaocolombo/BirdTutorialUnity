@@ -8,15 +8,14 @@ public class ManagerScript : MonoBehaviour
     public Text ScoreText;
     public GameObject GameOverScript;
 
-    [ContextMenu("AddScore")]
     public void AddScore(int score)
-    {
+     {
         PlayerStore+= score;
         ScoreText.text = PlayerStore.ToString();
     }
 
     public void RestartGame()
-    {
+      {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PlayerStore = 0;
     }

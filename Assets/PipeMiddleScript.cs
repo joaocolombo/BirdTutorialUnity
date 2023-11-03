@@ -8,7 +8,7 @@ public class PipeMiddleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ManagerScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<ManagerScript>();
+        ManagerScript = GameObject.FindGameObjectWithTag("Manager").GetComponent<ManagerScript>();
     }
 
     // Update is called once per frame

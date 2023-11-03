@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839034308444256174}
   - component: {fileID: 2641176407971256102}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,3 +399,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5d76b3cf81f584b95976e0013134f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerScript: {fileID: 0}

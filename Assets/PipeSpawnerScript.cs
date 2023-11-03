@@ -4,9 +4,9 @@ public class PipeSpawnerScript : MonoBehaviour
 {
     public GameObject PipePrefab;
     private float Timer;
-    public float SpawnRate = 1f;
-    public float Highest = 5f;
-    public float BonusPipeRate = 2f;
+    public float SpawnRate;
+    public float Highest;
+    public float BonusPipeRate;
 
     // Start is called before the first frame update
     void Start()
