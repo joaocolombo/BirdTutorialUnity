@@ -25,7 +25,6 @@ public class PipeSpawnerScript : MonoBehaviour
         {
             SpawnPipe();
             Timer = 0;
-
         }
     }
 

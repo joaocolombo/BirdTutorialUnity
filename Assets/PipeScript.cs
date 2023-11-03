@@ -23,7 +23,6 @@ public class PipeScript : MonoBehaviour
     {
         if (transform.position.x < DestroyPipeWhen)
         {
-            Debug.Log("Destroying pipe");
             Destroy(gameObject);
         }
     }

@@ -20,16 +20,19 @@ public class BirdScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+        if (IsAlive is false)
+            return;
         Flap();
         Direction();
+        LastPositionY = transform.position.y;
+
     }
 
     private void Direction()
     {
         var distancePerSecondSinceLastFrame = (transform.position.y - LastPositionY) * Time.deltaTime;
-        LastPositionY = transform.position.y;
         if (distancePerSecondSinceLastFrame < 0f && transform.rotation.z < AngleRotation)
         {
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.z, -AngleRotation, ref r, SmoothRotation);
@@ -45,8 +48,6 @@ public class BirdScript : MonoBehaviour
 
     private void Flap()
     {
-        if (IsAlive is false)
-            return;
 
         if (Input.GetKeyDown(KeyCode.Space))
             rb.velocity = Vector2.up * FlapStrength;
