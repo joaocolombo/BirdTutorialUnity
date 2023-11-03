@@ -12,10 +12,10 @@ public class CloudScript : MonoBehaviour
     void Start()
     {
 
-        transform.position = new Vector3(transform.position.x, Random.Range(-4, 8));
+        transform.position = new Vector3(transform.position.x, Random.Range(-4, 8), 10);
         var scale = Random.Range(0.1f, 0.5f);
         transform.localScale = new Vector3(scale, scale);
-        FinalSpeed = SpeedBase * scale * 2;
+        FinalSpeed = SpeedBase * scale;
     }
 
     // Update is called once per frame
@@ -24,6 +24,7 @@ public class CloudScript : MonoBehaviour
         transform.position += (Vector3.left * FinalSpeed) * Time.deltaTime;
         DestroyIfIsPossible();
     }
+
     private void DestroyIfIsPossible()
     {
         if (transform.position.x < DestroyWhen)
